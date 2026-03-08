@@ -1,7 +1,7 @@
 # Proxmox Setup
 This is the documentation about what I want to do with Proxmox and what I have done to keep track of changes, as well as share my experience.
-## Tasks to do:
-
-## Tasks completed:
-- Create a backup of Ubuntu Server
-  - I need to create an image of my current Ubuntu Server that is currently serving as my Minecraft Server. I want to use Proxmox so that I get more value out of my PC that is serving as my server. This backup will be on a spare SSD I have.
+## :desktop_computer: System Specs
+- **CPU**: AMD Ryzen 5 2600 (6 cores, base clock @ 3.4GHz)
+- **GPU**: AMD Radeon RX 580 Armor 8GB OC (8GB GDDR5)
+- **RAM**: G.Skill 16GB (8GBx2, 2133 MT/s)
+- **Storage**: 500GB :broken_heart:
