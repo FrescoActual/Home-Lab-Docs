@@ -50,3 +50,6 @@ What I plan on doing with this server rack includes:
 - 3U open space for NAS storage bay
 
 That only uses 6U out of the 8U. I am thinking of getting my server PC and swapping out the motherboard for a Mini ITX motherboard, as I have seen some tiny shelfs for Mini ITX boards for a 10" rack. Whatever I decide, I am really excited to start adding stuff into the rack!
+## [Issue #9](https://github.com/users/FrescoActual/projects/1?pane=issue&itemId=170378609) Install Docker and Portainer
+
+## [Issue #10](https://github.com/users/FrescoActual/projects/1?pane=issue&itemId=170378746) Configure Pihole
