@@ -51,5 +51,16 @@ What I plan on doing with this server rack includes:
 
 That only uses 6U out of the 8U. I am thinking of getting my server PC and swapping out the motherboard for a Mini ITX motherboard, as I have seen some tiny shelfs for Mini ITX boards for a 10" rack. Whatever I decide, I am really excited to start adding stuff into the rack!
 ## [Issue #9](https://github.com/users/FrescoActual/projects/1?pane=issue&itemId=170378609) Install Docker and Portainer
+Docker has been great with running our local AI model, but I want to have more containers and a way to maintain all of them with a nice GUI. Luckily, I learned about Portainer, a management platform for Docker apps. 
+
+1. First thing you want to do before any project is `sudo apt update && sudo apt upgrade`, unless your distro has different commands for updating packages.  
+2. After that, if you don't have Docker already, you can install it with `curl -sSL https://get.docker.com | sh`. You can check if it installed properly with `docker --version`. 
+3. Once Docker is installed, you want to add your user to the Docker group with `sudo usermod -aG docker $USER`. I explain this command in the [AI Pi Issue](#issue-5-create-raspberry-pi-5-that-runs-ai-locally). You may need to reboot the device to have these changes take effect. 
+4. Now that Docker is all configured, we'll get Portainer to have a nice GUI to work with when we are dealing with containers. We start with `sudo docker pull portainer/portainer-ce:linux-arm`, the `linux-arm` section is what I need since I am running this on a Raspberry Pi 5, and Raspberry Pi 5 uses that ARM chip. This is how I did it, but I believe you are able to replace `linux-arm` with `latest` to automatically grab the right image for your architecture. This command pulls the Portainer Docker container. 
+5. To actually create the container from the Portainer image, we will run this small, short command.. `sudo docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:linux-arm`
+6. To access the GUI:
+    - On the Pi: try `http://raspberry.pi.local:9000` or `http://localhost:9000`.
+    - On a network device:  `http://IP_OF_YOUR_PI:9000`.
+7. Now you should be able to create a new account for Portainer! 
 
 ## [Issue #10](https://github.com/users/FrescoActual/projects/1?pane=issue&itemId=170378746) Configure Pihole
