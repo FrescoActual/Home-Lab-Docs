@@ -39,6 +39,12 @@ This next piece of my home lab was actually pretty fun to do and fairly simple t
     ghcr.io/open-webui/open-webui:main
   ```
 7. After giving the container time to start up, you should be able to access `http://IP_OF_YOUR_PI:8080` and start using the Pi! 😎
+## [Issue #7](https://github.com/users/FrescoActual/projects/1?pane=issue&itemId=163211825)
+I wasn't going to write anything since this process was incredibly easy, but I'll give a little bit of information. I wanted Tailscale so I could connect to my homelab devices from anywhere. I learned about this at HOU.SEC.CON; the speaker said this was essential. 
+
+Tailscale is a platform that will enable connectivity between devices, regardless if they are on the same network or not. Tailscale acts like a VPN, but uses WireGuard protocols. 
+
+Set up was so easy, it's as easy as downloading it onto a device (mobile, laptop, desktop, local server, cloud-based server) and log into Tailscale. It really is that simple. I was prepared for configuring different settings, but that is not needed at all. I won't talk about the steps in detail, but I will link [a video](https://www.youtube.com/watch?v=sPdvyR7bLqI), in case I am not making sense. 
 ## [Issue #8](https://github.com/users/FrescoActual/projects/1?pane=issue&itemId=164168852) Put together mini server rack
 I got a 10" 8U mini server rack for my home lab, and I have been excited to put it together. The [server rack](https://www.amazon.com/GeeekPi-Cabinet-Equipment-RackMate-Rackmount/dp/B0FBFDZD4C/ref=sr_1_1?crid=3G1IXYGP7JEGM&dib=eyJ2IjoiMSJ9.uexH0SuPJTHUgYz_oh6TBRE1IuBKegqnrwgMQFW64YUfOo2dEcBo5EGCkwbFq6dTRAmOkaPfAnvDOf6nxV9huxAKlgXR33PBvKjKw5_EZae9ogMm7GJUMaZ9fmxzRAFMUfTRBuL85Z0crTYqZzTcSk_5Uf1w6QWS79LmH9kKd847gJ6WkNlqjsisgtb04WOo7qAEspHAOo_8IkxdpztkjogQrEP3aTcbbfYT_F20goI.jsVVde0IinnjXxsORAxmdPEwRjrY2k7OsztOLAfEXk0&dib_tag=se&keywords=deskpi%2Bt1&qid=1774840199&sprefix=deskpi%2B%2Caps%2C178&sr=8-1&th=1) that I got was from Geeekpi off of Amazon. I think this mini server rack is good for people, like me, starting home labs for themselvs because it is much cheaper and smaller than a full sized server rack.
 
