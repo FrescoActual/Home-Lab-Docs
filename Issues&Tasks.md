@@ -70,3 +70,10 @@ Docker has been great with running our local AI model, but I want to have more c
 7. Now you should be able to create a new account for Portainer! 
 
 ## [Issue #10](https://github.com/users/FrescoActual/projects/1?pane=issue&itemId=170378746) Configure Pihole
+Pihole is a great addition to any network. With simple installation and light-weight requirements, this can be a sweet addition to a home lab without taking up resources.
+
+1. You can get Pihole running on a Docker container, but you can also download it onto a  [supported operating systems](https://docs.pi-hole.net/main/prerequisites/#supported-operating-systems). I chose a LXC running Ubuntu Server.
+2. With Proxmox, I created an LXC with Ubuntu Server with a ***static IP address*** then installed Pihole using `curl -sSL https://install.pi-hole.net | bash`.
+3. After it installation, a blue screen setup page will pop up in the terminal. It's fairly straight forward, but you can follow [this video](https://youtu.be/oX4NqFisC5Y?si=ww8p9rs4Yj1u-jeI&t=333) if you are unsure. 
+4. To get the benefits of Pihole, you must set your DNS server to the IP address of the Pihole. You can set this per device, or set it up for your network via the router. DNS servers need to be static, that's why we set the LXC to have a static IP. 
+5. You can check out the queries Pihole blocks and other settings via `http://IP_OF_YOUR_LXC:admin` if you selected to install the web admin page during Pihole setup. 
